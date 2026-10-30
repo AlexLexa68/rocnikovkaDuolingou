@@ -1,15 +1,56 @@
 <!doctype html>
-<html lang="cz">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dungolino</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SPŠMB Edu - Menu</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-        <h3>oficialni dungolino</h3> 
-        <h1>by: Lexa68</h1>
+    <!-- header -->
+    <header class="topBar">
+      <div class="logo">
+        <span class="badge">67</span>
+        <h1>EDU SPŠ</h1>
+      </div>
+      <div class="userStats">
+        <div class="statItem">
+          <strong>Skóre: <span>1 267</span></strong>
+        </div>
+        <div class="statItem">
+          <strong>Denní řada: <span>67 Dní</span></strong>
+        </div>
+      </div>
     </header>
+
+    <!-- menu container -->
+    <main class="container">
+      <section class="heroSection">
+        <h1>Vyber si ročník:</h1>
+      </section>
+
+      <!-- cards -->
+      <section class="cardsGrid">
+        <div class="card">
+          <div class="cardIcon">ikona</div>
+          <h2>rocnik</h2>
+          <p>popis</p>
+          <div>
+            <div class="progressBar">
+              <div class="fill" style="width: 0%"></div>
+            </div>
+          </div>
+          <button class="btn">button</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>Vytvořil: <a href="https://github.com/AlexLexa68">Lexa68</a></p>
+        <p>Pro: <a href="https://www.spsmb.cz/">SPŠMB</a></p>
+    </footer>
+
+    <script src="./js/menuData.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

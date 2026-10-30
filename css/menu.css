@@ -1,0 +1,145 @@
+/* header */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  background: hsl(209, 98%, 40%);
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.userStats {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.userStats span {
+  color: rgb(8, 130, 146);
+}
+
+.statItem {
+  background: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 12px;
+}
+
+/*footer*/
+footer {
+  border-top: 2px solid #ebeaea;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  gap: 1em;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* menu veci atd */
+.container {
+  margin: 25px auto 40px auto;
+  min-width: 500px;
+  max-width: 40vw;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.progressBar {
+  background: #e5e5e5;
+  height: 16px;
+  width: 6em;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progressBar .fill {
+  background: hsl(209, 98%, 40%);
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* karty */
+.cardsGrid {
+  display: grid;
+  gap: 1em;
+}
+
+.card {
+  background: #ffffff;
+  border: 2px solid hsl(209, 97%, 41%);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 0 hsl(209, 96%, 33%);
+}
+
+.cardIcon {
+  font-size: 4em;
+  margin-bottom: 3px;
+}
+
+.card p {
+  font-size: 20px;
+  color: #5e5e5e;
+  margin-bottom: 0.7em;
+  flex-grow: 1;
+}
+.card h2 {
+  font-size: 32px;
+  margin-bottom: 0.2em;
+}
+
+/* butony */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  background: hsl(209, 72%, 62%);
+  color: white;
+  box-shadow: 0 4px 0 hsl(209, 41%, 49%);
+}
+
+.btn:hover {
+  transition: ease-out;
+  transition-duration: 0.2s;
+  background: hsl(209, 60%, 58%);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  background: hsl(209, 60%, 58%);
+  box-shadow: 0 2px 0 hsl(208, 44%, 33%);
+  transition-duration: 0.2s;
+  transition: ease-in;
+}

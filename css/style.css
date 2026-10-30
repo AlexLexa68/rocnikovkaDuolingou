@@ -1,0 +1,16 @@
+@import "./menu.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fdf8f4;
+  color: #3c3c3c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
