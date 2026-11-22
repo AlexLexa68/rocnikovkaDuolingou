@@ -4,8 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
-  background: #ffffff;
-  border-bottom: 2px solid #e0e0e0;
+  background: #1e2024;
+  border-bottom: 6px solid hsl(229, 10%, 21%);
+  border-radius: 10px;
 }
 
 .logo {
@@ -15,8 +16,7 @@
 }
 
 .badge {
-  background: hsl(209, 98%, 40%);
-  color: white;
+  background: hsl(219, 58%, 44%);
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 8px;
@@ -26,28 +26,50 @@
 .userStats {
   display: flex;
   gap: 20px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .userStats span {
-  color: rgb(8, 130, 146);
+  color: rgb(255, 255, 255);
 }
 
 .statItem {
-  background: #f0f0f0;
-  padding: 8px 14px;
+  background: hsl(219, 58%, 44%);
+  padding: 8px 12px 8px 6px;
   border-radius: 12px;
+  box-shadow: 0 4px 0 hsl(219, 64%, 27%);
+}
+
+@media (max-width: 620px) {
+  .topBar {
+    padding: 16px 12px 16px 18px;
+  }
+
+  .logo {
+    gap: 5px;
+  }
+
+  .userStats {
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  .statItem {
+    padding: 8px 10px 8px 5px;
+  }
 }
 
 /*footer*/
 footer {
-  border-top: 2px solid #ebeaea;
+  border-top: 2px solid hsl(229, 10%, 21%);
   display: flex;
   justify-content: center;
   text-align: center;
-  background: #ffffff;
+  background: #1e2024;
+  color: rgb(183, 187, 209);
   gap: 1em;
 }
+
 footer a {
   color: inherit;
   text-decoration: none;
@@ -55,29 +77,29 @@ footer a {
 
 /* menu veci atd */
 .container {
-  margin: 25px auto 40px auto;
-  min-width: 500px;
-  max-width: 40vw;
+  margin: 30px auto;
   width: 100%;
-  padding: 0 20px;
-}
-
-.heroSection {
-  text-align: center;
-  margin-bottom: 25px;
+  min-height: 84vh;
+  max-width: 70vw;
 }
 
 .progressBar {
-  background: #e5e5e5;
-  height: 16px;
-  width: 6em;
+  background: hsl(0, 0%, 63%);
+  height: 20px;
+  width: 8em;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 1em;
 }
 
 .progressBar .fill {
-  background: hsl(209, 98%, 40%);
+  background: #3eb0e6;
+  background: linear-gradient(
+    90deg,
+    rgba(62, 176, 230, 1) 0%,
+    rgba(105, 207, 255, 1) 50%,
+    rgba(62, 176, 230, 1) 100%
+  );
   height: 100%;
   border-radius: 10px;
 }
@@ -85,61 +107,69 @@ footer a {
 /* karty */
 .cardsGrid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1em;
 }
 
+@media (min-width: 1080px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 30px;
+    gap: 2em;
+  }
+}
+
 .card {
-  background: #ffffff;
-  border: 2px solid hsl(209, 97%, 41%);
+  background: hsl(219, 56%, 49%);
   border-radius: 16px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 0 hsl(209, 96%, 33%);
+  box-shadow: 0 9px 0 hsl(219, 55%, 37%);
 }
 
 .cardIcon {
   font-size: 4em;
-  margin-bottom: 3px;
+  padding-bottom: 8px;
 }
 
 .card p {
-  font-size: 20px;
-  color: #5e5e5e;
-  margin-bottom: 0.7em;
-  flex-grow: 1;
+  font-size: 22px;
+  color: #f5eded;
+  margin-bottom: 0.6em;
 }
 .card h2 {
   font-size: 32px;
+  color: rgb(252, 244, 244);
   margin-bottom: 0.2em;
 }
 
 /* butony */
 .btn {
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
+  background: hsl(209, 72%, 65%);
+  box-shadow: 0 5px 0 hsl(209, 42%, 46%);
+  border-radius: 13px;
+  width: 60%;
+  padding: 12px 6px;
+  color: white;
+  font-size: 24px;
   border: none;
   font-weight: bold;
   cursor: pointer;
-  font-size: 20px;
-  background: hsl(209, 72%, 62%);
-  color: white;
-  box-shadow: 0 4px 0 hsl(209, 41%, 49%);
 }
 
 .btn:hover {
   transition: ease-out;
   transition-duration: 0.2s;
-  background: hsl(209, 60%, 58%);
+  background: hsl(209, 58%, 60%);
 }
 
 .btn:active {
   transform: translateY(2px);
-  background: hsl(209, 60%, 58%);
-  box-shadow: 0 2px 0 hsl(208, 44%, 33%);
+  background: hsl(209, 58%, 60%);
+  box-shadow: 0 2px 0 hsl(209, 42%, 46%);
   transition-duration: 0.2s;
   transition: ease-in;
 }
